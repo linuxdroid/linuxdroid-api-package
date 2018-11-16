@@ -1,2 +1,2 @@
-# termux-api-package
-Termux package containing scripts to call exposed API methods in the [Termux:API](https://github.com/termux/termux-api) app.
+# linuxdroid-api-package
+Linuxdroid package containing scripts to call exposed API methods in the [Linuxdroid:API](https://github.com/linuxdroid/linuxdroid-api) app.

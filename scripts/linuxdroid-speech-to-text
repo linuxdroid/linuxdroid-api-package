@@ -1,0 +1,22 @@
+#!/data/data/com.linuxdroid/files/usr/bin/sh
+set -e -u
+
+SCRIPTNAME=linuxdroid-speech-to-text
+show_usage () {
+    echo "Usage: $SCRIPTNAME"
+    echo "Converts speech to text, sending partial matches to stdout."
+    exit 0
+}
+
+while getopts :h option
+do
+    case "$option" in
+        h) show_usage;;
+        ?) echo "$SCRIPTNAME: illegal option -$OPTARG"; exit 1;
+    esac
+done
+shift $(($OPTIND-1))
+
+if [ $# != 0 ]; then echo "$SCRIPTNAME: too many arguments"; exit 1; fi
+
+/data/data/com.linuxdroid/files/usr/libexec/linuxdroid-api SpeechToText

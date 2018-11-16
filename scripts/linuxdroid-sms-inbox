@@ -1,0 +1,4 @@
+#!/data/data/com.linuxdroid/files/usr/bin/sh
+
+echo "linuxdroid-sms-inbox: This script has been replaced by linuxdroid-sms-list."
+exit 1
